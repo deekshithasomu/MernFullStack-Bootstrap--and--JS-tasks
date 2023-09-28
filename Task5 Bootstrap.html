@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task5 Bootstrap</title>
+    <!-- Add Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .send-button {
+        background-color: orange; /* Set the background color to orange */
+        border-color: orange; /* Set the border color to orange */
+        color: white;
+        /* Set text color to white */
+        /* Required for the icon positioning */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <form class="needs-validation" novalidate>
+        <div class="mb-3 row">
+          <label
+            for="name"
+            class="col-sm-2 col-form-label"
+            id="nameLabel"
+            style="color: black"
+            >First Name</label
+          >
+
+          <div class="col-sm-10">
+            <span class="input-group-text">
+              <img src="name.jpg" alt="Address Icon" width="40" />
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                placeholder="First Name"
+                required
+            /></span>
+            <div class="invalid-feedback" id="nameFeedback">
+              Please supply your first Name
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3 row">
+          <label
+            for="name"
+            class="col-sm-2 col-form-label"
+            id="nameLabel1"
+            style="color: black"
+            >Last Name</label
+          >
+          <div class="col-sm-10">
+            <span class="input-group-text">
+              <img src="name.jpg" alt="Address Icon" width="40" />
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                placeholder="Last Name"
+                required
+              />
+            </span>
+            <div class="invalid-feedback" id="nameFeedback1">
+              Please supply your last name
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3 row">
+          <label
+            for="email"
+            class="col-sm-2 col-form-label"
+            id="emailLabel"
+            style="color: black"
+            >E-Mail</label
+          >
+          <div class="col-sm-10">
+            <span class="input-group-text">
+              <img src="E-Mail.jpg" alt="Address Icon" width="40" />
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="E-Mail Address"
+                required
+              />
+            </span>
+            <div class="invalid-feedback" id="emailFeedback">
+              Please supply your email address
+            </div>
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label
+            for="phone"
+            class="col-sm-2 col-form-label"
+            id="phoneLabel"
+            style="color: black"
+            >Phone#</label
+          >
+          <div class="col-sm-10">
+            <span class="input-group-text">
+              <img src="Phone.jpg" alt="Address Icon" width="40" />
+              <input
+                type="phone"
+                class="form-control"
+                id="phone"
+                name="phone"
+                placeholder="(845)555-1212"
+                required
+              />
+            </span>
+            <div class="invalid-feedback" id="phoneFeedback">
+              Please supply your phone number
+            </div>
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label
+            for="address"
+            class="col-sm-2 col-form-label"
+            id="addressLabel"
+            style="color: black"
+            >Address</label
+          >
+          <div class="col-sm-10">
+            <span class="input-group-text">
+              <img src="address-icon.jpg" alt="Address Icon" width="40" />
+
+              <input
+                class="form-control"
+                id="address"
+                name="address"
+                placeholder="Address"
+                required
+              />
+            </span>
+            <div class="invalid-feedback" id="addressFeedback">
+              Please supply your street address
+            </div>
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label
+            for="city"
+            class="col-sm-2 col-form-label"
+            id="cityLabel"
+            style="color: black"
+            >City</label
+          >
+          <div class="col-sm-10">
+            <span class="input-group-text">
+              <img src="city.jpg" alt="Address Icon" width="40" />
+
+              <input
+                class="form-control"
+                id="city"
+                name="city"
+                placeholder="city"
+                required
+              />
+            </span>
+            <div class="invalid-feedback" id="cityFeedback">
+              Please supply your city
+            </div>
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label
+            for="state"
+            class="col-sm-2 col-form-label"
+            id="stateLabel"
+            style="color: black"
+            >State</label
+          >
+          <div class="col-sm-10">
+            <span class="input-group-text">
+              <img src="state.jpg" alt="Address Icon" width="40" />
+
+              <select class="form-control" id="stateSelect" name="state">
+                <option value="" disabled selected>
+                  Please Select a state
+                </option>
+                <option value="Alabama">Alabama</option>
+                <option value="Alaska">Alaska</option>
+                <option value="Arizona">Arizona</option>
+                <option value="Arkansas">Arkansas</option>
+                <!-- Add more options here as needed -->
+              </select>
+            </span>
+            <div class="invalid-feedback" id="stateFeedback">
+              Please supply your state
+            </div>
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label
+            for="hosting"
+            class="col-sm-2 col-form-label"
+            id="hostingLabel"
+            style="color: black"
+            >Do you have hosting?</label
+          >
+          <div class="col-sm-10">
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="agree"
+                id="yes"
+                value="yes"
+              />
+              <label class="form-check-label" for="yes">Yes</label>
+            </div>
+            <br />
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="agree"
+                id="no"
+                value="no"
+              />
+              <label class="form-check-label" for="no">No</label>
+            </div>
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label
+            for="project-description"
+            class="col-sm-2 col-form-label"
+            id="projectLabel"
+            style="color: black"
+            >Project Description</label
+          >
+          <div class="col-sm-10">
+            <span class="input-group-text">
+              <img
+                src="project-description.jpg"
+                alt="Address Icon"
+                width="40"
+              />
+
+              <textarea
+                class="form-control"
+                id="city"
+                name="city"
+                placeholder="Project Description"
+                required
+              ></textarea>
+            </span>
+            <div class="invalid-feedback" id="projectFeedback">
+              Please supply your project description
+            </div>
+          </div>
+        </div>
+        <div class="d-grid gap-1 col-1 mx-auto">
+          <button
+            class="btn btn-primary send-button"
+            type="submit"
+            id="submitButton"
+          >
+            Send
+            <img src="send.jpg" alt="Send Icon" width="25" height="20" />
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Add Bootstrap JS for form validation -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      // Use JavaScript to prevent the default form submission
+      document
+        .querySelector("form.needs-validation")
+        .addEventListener("submit", function (event) {
+          if (this.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+
+            // Display the custom validation message for all fields
+            const invalidFields = document.querySelectorAll(".is-invalid");
+            invalidFields.forEach((field) => {
+              field.innerHTML = "Please enter this field.";
+            });
+
+            // Mark all form elements as invalid
+            this.classList.add("was-validated");
+            submitButton.classList.add("btn-danger");
+            nameLabel.style.color = "red";
+            nameLabel1.style.color = "red";
+            emailLabel.style.color = "red";
+            phoneLabel.style.color = "red";
+            addressLabel.style.color = "red";
+            cityLabel.style.color = "red";
+            stateLabel.style.color = "red";
+            hostingLabel.style.color = "red";
+            projectLabel.style.color = "red";
+
+            nameFeedback.style.display = "block";
+            nameFeedback1.style.display = "block";
+            emailFeedback.style.display = "block";
+            phoneFeedback.style.display = "block";
+            addressFeedback.style.display = "block";
+            cityFeedback.style.display = "block";
+            stateFeedback.style.display = "block";
+            projectFeedback.style.display = "block";
+          }
+        });
+    </script>
+  </body>
+</html>
